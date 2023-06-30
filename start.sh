@@ -1,11 +1,15 @@
 #!/bin/bash
-wget https://github.com/GuinnessShep/Dumb/raw/main/tunnelto
-chmod +x tunnelto
-tunnelto set-auth --key LPiLOhptMIl4Kbn6zgMw1u
+apt-get update
+apt-get full-upgrade -y
+mkdir /working
+cd /working
 git clone -b v1.0 https://github.com/camenduru/text-generation-webui
 cd text-generation-webui
 pip install -r requirements.txt
 pip install -U gradio==3.28.3
+wget https://github.com/GuinnessShep/Dumb/raw/main/tunnelto
+chmod +x tunnelto
+tunnelto set-auth --key LPiLOhptMIl4Kbn6zgMw1u
 mkdir repositories
 cd repositories
 git clone -b v1.0 https://github.com/camenduru/GPTQ-for-LLaMa.git
