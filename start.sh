@@ -12,9 +12,11 @@ tar -xvzf tunnelto-linux.tar.gz
 ./tunnelto set-auth --key LPiLOhptMIl4Kbn6zgMw1u
 mkdir repositories
 cd repositories
-git clone -b v1.0 https://github.com/camenduru/GPTQ-for-LLaMa.git
+git clone https://github.com/qwopqwop200/GPTQ-for-LLaMa
 cd GPTQ-for-LLaMa
-python3 setup_cuda.py install
+pip install torch torchvision torchaudio
+pip install -r requirements.txt
+pip install auto-gptq
 cd ..
 git clone https://github.com/PanQiWei/AutoGPTQ.git
 cd AutoGPTQ
