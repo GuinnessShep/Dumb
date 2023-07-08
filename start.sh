@@ -3,7 +3,7 @@ apt-get update
 apt-get full-upgrade -y
 mkdir /working
 cd /working
-git clone -b v1.0 https://github.com/camenduru/text-generation-webui
+git clone https://github.com/oobabooga/text-generation-webui
 cd text-generation-webui
 pip install -r requirements.txt
 pip install -U gradio==3.28.3
