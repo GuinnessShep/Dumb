@@ -7,9 +7,9 @@ git clone -b v1.0 https://github.com/camenduru/text-generation-webui
 cd text-generation-webui
 pip install -r requirements.txt
 pip install -U gradio==3.28.3
-wget https://github.com/GuinnessShep/Dumb/raw/main/tunnelto
-chmod +x tunnelto
-tunnelto set-auth --key LPiLOhptMIl4Kbn6zgMw1u
+wget https://github.com/agrinman/tunnelto/releases/download/0.1.18/tunnelto-linux.tar.gz
+tar -xvzf tunnelto-linux.tar.gz
+./tunnelto set-auth --key LPiLOhptMIl4Kbn6zgMw1u
 mkdir repositories
 cd repositories
 git clone -b v1.0 https://github.com/camenduru/GPTQ-for-LLaMa.git
@@ -21,6 +21,7 @@ cd AutoGPTQ
 pip install .
 cd ..
 cd ..
+pip install markdown
 python3 download-model.py TheBloke/Tulu-30B-SuperHOT-8K-GPTQ
 python3 download-model.py TheBloke/WizardLM-33B-V1.0-Uncensored-GPTQ
 python3 download-model.py TheBloke/airoboros-65B-gpt4-1.4-GGML
