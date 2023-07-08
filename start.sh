@@ -27,5 +27,5 @@ python3 download-model.py TheBloke/WizardLM-33B-V1.0-Uncensored-GPTQ
 python3 download-model.py TheBloke/airoboros-65B-gpt4-1.4-GGML
 python3 download-model.py TheBloke/WizardLM-33B-V1.0-Uncensored-GGML
 python3 download-model.py TheBloke/chronos-33b-superhot-8k-fp16
-./tunnelto --subdomain ilovedogshit --port 7860 & python3 server.py --chat --share --model LLaMA --auto-devices --extensions gallery send_pictures character_bias
+./tunnelto --port 7860 & python3 server.py --chat --share --model LLaMA --auto-devices --extensions gallery send_pictures character_bias
 wait
