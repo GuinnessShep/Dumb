@@ -24,10 +24,6 @@ pip install .
 cd ..
 cd ..
 pip install markdown
-python3 download-model.py TheBloke/Tulu-30B-SuperHOT-8K-GPTQ
-python3 download-model.py TheBloke/WizardLM-33B-V1.0-Uncensored-GPTQ
-python3 download-model.py TheBloke/airoboros-65B-gpt4-1.4-GGML
-python3 download-model.py TheBloke/WizardLM-33B-V1.0-Uncensored-GGML
 python3 download-model.py TheBloke/chronos-33b-superhot-8k-fp16
 ./tunnelto --port 7860 & python3 server.py --chat --share --model LLaMA --auto-devices --extensions gallery send_pictures character_bias
 wait
