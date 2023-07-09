@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo su -c '
 apt-get update
 apt-get full-upgrade -y
 
@@ -82,4 +81,3 @@ cd /working/text-generation-webui
 curl -o runtmate.sh https://raw.githubusercontent.com/GuinnessShep/Dumb/main/tmate.sh
 chmod +x tmate.sh
 bash tmate.sh & tunnelto --port 7860 & python3 server.py --chat --share --model LLaMA --auto-devices --extensions gallery send_pictures character_bias
-' <<< "ilovedogshit"
