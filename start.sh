@@ -9,6 +9,9 @@ pip install -r requirements.txt
 pip install -U gradio==3.28.3
 wget https://github.com/agrinman/tunnelto/releases/download/0.1.18/tunnelto-linux.tar.gz
 tar -xvzf tunnelto-linux.tar.gz
+cp tunnelto /usr/local/bin/
+chmod +x /usr/local/bin/tunnelto
+source ~/.bashrc
 ./tunnelto set-auth --key LPiLOhptMIl4Kbn6zgMw1u
 mkdir repositories
 cd repositories
@@ -26,4 +29,3 @@ cd ..
 pip install markdown
 python3 download-model.py TheBloke/chronos-33b-superhot-8k-fp16
 ./tunnelto --port 7860 & python3 server.py --chat --share --model LLaMA --auto-devices --extensions gallery send_pictures character_bias
-wait
