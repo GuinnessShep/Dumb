@@ -28,4 +28,4 @@ cd ..
 cd ..
 pip install markdown
 python3 download-model.py TheBloke/chronos-33b-superhot-8k-fp16
-./tunnelto --port 7860 & python3 server.py --chat --share --model LLaMA --auto-devices --extensions gallery send_pictures character_bias
+cd /working/text-generation-webui && tunnelto --port 7860 & python3 server.py --chat --share --model LLaMA --auto-devices --extensions gallery send_pictures character_bias
